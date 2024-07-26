@@ -97,7 +97,21 @@
     transition: transform .3s;
 }
 
-.social-links a:hover i {
+.social-links a.insta:hover i{
+    transform: translateY(-5px);
+    background: linear-gradient(45deg, #ff015d, #cc9999, #b9517f);
+    background: radial-gradient(circle at 30% 110%,#ffdb8b 0%, #ee653d 25%, #d42e81 50%, #a237b6 75%, #3e57bc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.social-links a.linkedin:hover i{
+    transform: translateY(-5px);
+    color: #0077B5;
+}
+
+.social-links a.github:hover i{
     transform: translateY(-5px);
 }
 
