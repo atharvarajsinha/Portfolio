@@ -1,0 +1,128 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    overflow: hidden;
+    bottom: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-col {
+    flex-basis: 25%;
+    margin-bottom: 20px;
+}
+
+.footer-col:first-child {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-col:first-child h4 {
+    margin: 0;
+}
+
+.footer-col:first-child img {
+    width: 100%;
+    height: auto;
+    max-width: 800px; /* adjust this value to set the maximum width of the image */
+    margin: 0 auto;
+    display: block;
+}
+
+.footer-col:not(:first-child) h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ccc;
+}
+
+.footer-col:nth-child(3) h4{
+    text-align: center;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto; /* adjust this value to set the margin between the image and the social links */
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 10px; /* adjust this value to set the margin between the social links */
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #fff; /* adjust this value to set the color of the social links */
+    font-size: 24px; /* adjust this value to set the size of the social icons */
+}
+
+.social-links i {
+    transition: transform .3s;
+}
+
+.social-links a:hover i {
+    transform: translateY(-5px);
+}
+
+/* Responsive Styles */
+
+@media (max-width: 1095px) {
+    .footer-col {
+        flex-basis: 100%;
+        word-wrap: break-word;
+    }
+    
+    .footer-col:nth-child(3) {
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer-col:nth-child(3) ul {
+        text-align: left;
+    }
+
+    .footer .row {
+        justify-content: center;
+    }
+}
