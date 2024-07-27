@@ -11,6 +11,10 @@ body{
     background: #000;
 }
 
+h1{
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
 main{
     max-width: 1200px;
     margin: 40px auto;
@@ -34,6 +38,8 @@ main{
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    border: 1px solid #000;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 1);
     object-fit: cover;
 }
 
@@ -96,7 +102,7 @@ main{
 .edu h1{
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: #333;
 }
 
@@ -113,7 +119,7 @@ main{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    width: 300px;
+    width: 310px;
     min-height: 250px;
 }
 
@@ -125,6 +131,15 @@ main{
 
 .edu-detail h2{
     margin-bottom: 25px;
+}
+
+.edu-detail .additional{
+    text-align: left;
+    margin-top: 20px;
+}
+
+.edu-detail .additional ol{
+    padding: 0 0 0 20px;
 }
 
 @media screen and (max-width: 1095px) {
