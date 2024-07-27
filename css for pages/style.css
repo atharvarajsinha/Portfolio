@@ -10,3 +10,73 @@ body{
     color: #fff;
     background: #000;
 }
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.hero .content {
+    word-wrap: break-word;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero .content img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.hero .content .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    text-align: center;
+    line-height: 1.85;
+}
+
+.readMore {
+    margin-top: 20px;
+}
+
+.readMore .btn {
+    padding: 20px 20px;
+    font-size: 1rem;
+    font-weight: 550;
+    color: #000;
+    background-color: transparent;
+    border: 2.5px solid #000;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.readMore .btn:hover {
+    background-color: #333;
+    color: #fff;
+    border: none;
+}
+
+@media (max-width: 1095px){
+    .hero .content{
+        flex-direction: column;
+        text-align: center;
+    }
+    h1{
+        margin: 10px 0;
+    }
+    p{
+        font-size: 1rem;
+    }
+}

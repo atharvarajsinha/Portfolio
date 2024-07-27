@@ -1,4 +1,4 @@
-.footer {
+.footer{
     background-color: #333;
     color: #fff;
     padding: 20px 0;
@@ -8,67 +8,67 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.footer .container {
+.footer .container{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-.footer .row {
+.footer .row{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
 
-.footer-col {
+.footer-col{
     flex-basis: 25%;
     margin-bottom: 20px;
 }
 
-.footer-col:first-child {
+.footer-col:first-child{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
 }
 
-.footer-col:first-child h4 {
+.footer-col:first-child h4{
     margin: 0;
 }
 
-.footer-col:first-child img {
+.footer-col:first-child img{
     width: 100%;
     height: auto;
-    max-width: 800px; /* adjust this value to set the maximum width of the image */
+    max-width: 800px;
     margin: 0 auto;
     display: block;
 }
 
-.footer-col:not(:first-child) h4 {
+.footer-col:not(:first-child) h4{
     font-size: 18px;
     margin-bottom: 20px;
     text-decoration: underline;
 }
 
-.footer-col ul {
+.footer-col ul{
     list-style: none;
     padding: 0;
     margin: 0;
     margin-top: 20px;
 }
 
-.footer-col ul li {
+.footer-col ul li{
     margin-bottom: 10px;
 }
 
-.footer-col ul li a {
+.footer-col ul li a{
     color: #fff;
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
-.footer-col ul li a:hover {
+.footer-col ul li a:hover{
     color: #ccc;
 }
 
@@ -76,24 +76,24 @@
     text-align: center;
 }
 
-.social-links {
+.social-links{
     list-style: none;
     padding: 0;
-    margin: 20px auto; /* adjust this value to set the margin between the image and the social links */
+    margin: 20px auto;
 }
 
-.social-links li {
+.social-links li{
     display: inline-block;
-    margin-right: 10px; /* adjust this value to set the margin between the social links */
+    margin-right: 10px;
 }
 
-.social-links a {
+.social-links a{
     text-decoration: none;
-    color: #fff; /* adjust this value to set the color of the social links */
-    font-size: 24px; /* adjust this value to set the size of the social icons */
+    color: #fff;
+    font-size: 24px;
 }
 
-.social-links i {
+.social-links i{
     transition: transform .3s;
 }
 
@@ -114,8 +114,6 @@
 .social-links a.github:hover i{
     transform: translateY(-5px);
 }
-
-/* Responsive Styles */
 
 @media (max-width: 1095px) {
     .footer-col {
