@@ -12,7 +12,10 @@ body{
 }
 
 h1{
+    text-align: center;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+    color: #333;
 }
 
 main{
@@ -31,7 +34,8 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;padding: 20px 0;
+    gap: 20px;
+    padding: 20px 0;
 }
 
 .hero .content img{
@@ -97,13 +101,7 @@ main{
     align-items: center;
     justify-content: center;
     padding: 20px;
-}
-
-.edu h1{
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: #333;
+    margin-bottom: 40px;
 }
 
 .details{
@@ -123,14 +121,22 @@ main{
     min-height: 250px;
 }
 
+.edu-detail .board{
+    text-align: center;
+}
+
 .edu-detail p{
-    margin-bottom: 10px;
     text-align: left;
     line-height: 1.85;
 }
 
 .edu-detail h2{
     margin-bottom: 25px;
+}
+
+.edu-detail #board{
+    font-weight: 100;
+    font-size: 1.1rem;
 }
 
 .edu-detail .additional{
