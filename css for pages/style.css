@@ -11,46 +11,50 @@ body{
     background: #000;
 }
 
-.hero {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #fff;
+main{
+    max-width: 1200px;
+    margin: 40px auto;
+    border-radius: 10px;
 }
 
-.hero .content {
+.hero{
+    padding: 0 0 20px 0;
+}
+
+.hero .content{
     word-wrap: break-word;
     color: #333;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 20px;padding: 20px 0;
 }
 
-.hero .content img {
+.hero .content img{
     width: 200px;
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.hero .content .text-container {
+.hero .content .text-container{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-p {
+.content p{
     font-size: 1.2rem;
     max-width: 600px;
     text-align: center;
     line-height: 1.85;
 }
 
-.readMore {
+.readMore{
     margin-top: 20px;
 }
 
-.readMore .btn {
+.readMore .btn{
     padding: 20px 20px;
     font-size: 1rem;
     font-weight: 550;
@@ -62,7 +66,7 @@ p {
     transition: background-color 0.3s ease;
 }
 
-.readMore .btn:hover {
+.readMore .btn:hover{
     background-color: #333;
     color: #fff;
     border: none;
@@ -76,7 +80,62 @@ p {
     h1{
         margin: 10px 0;
     }
-    p{
+    .hero .content p{
         font-size: 1rem;
+    }
+}
+
+.edu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.edu h1{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.edu-detail{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    min-height: 250px;
+}
+
+.edu-detail p{
+    margin-bottom: 10px;
+    text-align: left;
+    line-height: 1.85;
+}
+
+.edu-detail h2{
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 1095px) {
+    .details{
+        flex-direction: column;
+    }
+    .details{
+        gap: 10px;
+    }
+    .edu-detail{
+        width: 80%;
+        margin: 5px auto;
     }
 }
