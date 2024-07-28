@@ -24,6 +24,8 @@ function includeHTML()
             return;
         }
     }
+
+    // For active Class
     var ele = document.querySelectorAll(".navbar a");
     var loc = window.location.pathname;
     loc = loc.replace("/","");
@@ -38,5 +40,21 @@ function includeHTML()
                 ele[1].classList.remove("active");
             }
         }
+    }
+
+    
+};
+
+// For toggle
+function toggleNav()
+{
+    var navbarLinks = document.getElementById("navbarLinks");
+    if(navbarLinks.style.display === "flex")
+    {
+        navbarLinks.style.display = "none";
+    }
+    else
+    {
+        navbarLinks.style.display = "flex";
     }
 };

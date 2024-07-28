@@ -115,12 +115,12 @@
     transform: translateY(-5px);
 }
 
-@media (max-width: 1095px) {
-    .footer-col {
+@media (max-width: 1095px){
+    .footer-col{
         flex-basis: 100%;
         word-wrap: break-word;
     }
-    .footer-col:nth-child(3) {
+    .footer-col:nth-child(3){
         text-align: center;
         margin: 0 auto;
         display: flex;
@@ -128,7 +128,7 @@
         align-items: center;
         flex-direction: column;
     }
-    .footer-col:nth-child(3) ul {
+    .footer-col:nth-child(3) ul{
         text-align: left;
     }
     .footer .row {

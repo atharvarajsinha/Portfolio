@@ -1,11 +1,12 @@
 .navbar{
     background-color: #fff;
-    padding: 0 20px 0 0;
+    padding: 0 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 .navbar a{
@@ -30,18 +31,15 @@
     color: #fff;
 }
 
-.navbar a.logo{
+.navbar .logo{
     margin: 0 auto;
     padding: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    text-align: center;
-    width: 100%;
 }
 
-.navbar a.logo img{
+.navbar .logo img{
     max-width: 100%;
     height: auto;
 }
@@ -51,11 +49,37 @@
     box-shadow: none;
 }
 
-@media (min-width: 1080px){
-    .navbar {
+.navbar .toggle-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #000;
+}
+
+.navbar-links{
+    display: none;
+    flex-direction: column;
+    position: absolute;top: calc(100%);
+    right: 0;
+    width: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 1;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+@media (min-width: 1285px){
+    .navbar{
         flex-direction: row;
     }
-    .navbar a.logo{
+    .navbar .logo{
         margin: 0 20px;
         padding: 8px;
         display: flex;
@@ -64,20 +88,49 @@
         width: auto;
         text-align: left;
     }
-    .navbar a.logo img{
+    .navbar .logo img{
         height: 28px;
         margin-right: 12px;
-    }
-    .navbar a.logo:hover{
-        background-color: #fff;
-        box-shadow: none;
     }
     .navbar-links{
         display: flex;
         align-items: center;
+        flex-direction: row;
+        position: static;
+        height: auto;
+        box-shadow: none;
+        width: auto;
     }
     .navbar a:not(.logo){
         text-align: left;
         width: auto;
+    }
+    .toggle-button{
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 1284px){
+    .navbar{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .navbar .logo{
+        order: 1;
+        flex-grow: 1;
+        text-align: center;
+    }
+    .toggle-button{
+        order: 2;
+        display: flex;
+        padding-right: 20px;
+    }
+    .navbar-links{
+        flex-direction: column;
+    }
+    .navbar a{
+        width: 100%;
+        overflow: hidden;
     }
 }
