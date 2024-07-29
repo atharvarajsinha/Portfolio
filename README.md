@@ -2,10 +2,10 @@
 This project is a personal portfolio website built by Atharva Raj Sinha to showcase his projects and experience in Web Development.
 
 ## Project URL
-The website is hosted at https://atharvarajsinha.netlify.app.
+The website is hosted at [atharvarajsinha.netlify.app](https://atharvarajsinha.netlify.app).
 
 ## Project Repository
-You can find the project repository on GitHub at www.github.com/atharvarajsinha/Portfolio.git.
+You can find the project repository on GitHub at [atharvarajsinha/Portfolio]www.github.com/atharvarajsinha/Portfolio.git).
 
 ## Technologies Used
 - **HTML:** For structuring the website content.
@@ -35,7 +35,5 @@ The primary goal of this project was to create a personal portfolio website to s
 
 **Atharva Raj Sinha**
 
-GitHub
-LinkedIn
-Portfolio
-Let me know if you need any further assistance
+- [GitHub](https://github.com/atharvarajsinha)
+- [LinkedIn](https://www.linkedin.com/in/atharvarajsinha/)
