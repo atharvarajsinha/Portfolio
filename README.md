@@ -1,5 +1,5 @@
 # Portfolio
-This project is a personal portfolio website built by Atharva Raj Sinha to showcase his projects and experience in Web Development.
+I'm Atharva Raj Sinha, a passionate and detail-driven web developer with a keen eye for design and a love for building innovative solutions. This portfolio showcases my projects, skills, and experience in Web Development, highlighting my journey from concept to deployment. Take a look around to explore my work, learn more about me, and discover how I can help bring your ideas to life!
 
 ## Project URL
 The website is hosted at [atharvarajsinha.netlify.app](https://atharvarajsinha.netlify.app).
