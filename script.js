@@ -29,6 +29,10 @@ function includeHTML()
     var ele = document.querySelectorAll(".navbar-links a");
     var loc = window.location.pathname;
     loc = loc.replace("/","");
+    if(loc==="")
+        loc = "index.html";
+    else
+        loc = loc+".html";
     for(var i=0; i<ele.length; i++)
     {
         console.log("Location: "+loc + "\t" + "Mine: "+ele[i].getAttribute("href"));
