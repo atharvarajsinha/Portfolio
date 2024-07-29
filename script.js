@@ -36,7 +36,6 @@ function includeHTML()
             ele[i].classList.add("active");
             if(i!=1)
             {
-                ele[i-1].classList.remove("active");
                 ele[1].classList.remove("active");
             }
         }
