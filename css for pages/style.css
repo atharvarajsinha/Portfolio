@@ -58,10 +58,14 @@ main{
     max-width: 600px;
     text-align: center;
     line-height: 1.85;
+    word-break: break-word; /* Break words if they are too long */
+    overflow-wrap: break-word; /* Break words to prevent overflow */
+    white-space: normal; /* Allow the text to wrap and break to the next line */
+    
 }
 
 .readMore{
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .readMore .btn{
@@ -87,21 +91,24 @@ main{
         flex-direction: column;
         text-align: center;
     }
-    h1{
-        margin: 10px 0;
+    .hero .content img{
+        margin: 50px;
+    }
+    .hero .content h1{
+        margin: 10px;
     }
     .hero .content p{
         font-size: 1rem;
     }
 }
 
-.edu{
+.section{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .details{
@@ -109,9 +116,10 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
+    margin-bottom: 20px;
 }
 
-.edu-detail{
+.detail{
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -121,42 +129,97 @@ main{
     min-height: 250px;
 }
 
-.edu-detail .board{
+.detail .board{
     text-align: center;
 }
 
-.edu-detail p{
+.detail p{
     text-align: left;
     line-height: 1.85;
+    color: #333;
 }
 
-.edu-detail h2{
+.detail h2{
     margin-bottom: 25px;
 }
 
-.edu-detail #board{
+.detail #board{
     font-weight: 500;
     font-size: 1.1rem;
 }
 
-.edu-detail .additional{
+.detail .additional{
     text-align: left;
     margin-top: 20px;
 }
 
-.edu-detail .additional ol{
+.detail .additional ol{
     padding: 0 0 0 20px;
+    color: #333;
 }
 
 @media screen and (max-width: 1095px) {
     .details{
         flex-direction: column;
-    }
-    .details{
         gap: 10px;
     }
-    .edu-detail{
+    .detail{
         width: 80%;
         margin: 5px auto;
     }
+}
+
+.iframe-container{
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.iframe-container iframe{
+    width: 100%;
+    height: 100%;
+    border: 1.5px solid #333;
+    transition: filter 0.3s ease, pointer-events 0.3s ease;
+    pointer-events: auto;
+}
+
+.iframe-container:hover iframe{
+    filter: blur(4px);
+    pointer-events: none;
+}
+
+.iframe-container .visit-link{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #000;
+    border: 2.5px solid #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.visit-link:hover{
+    background-color: #333;
+    color: #fff;
+    border: none;
+}
+
+.iframe-container:hover .visit-link{
+    display: block;
+}
+
+.read{
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+}
+
+.read:hover{
+    text-decoration: underline;
 }
