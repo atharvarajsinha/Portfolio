@@ -31,7 +31,7 @@ function includeHTML()
     loc = loc.replace("/","");
     for(var i=0; i<ele.length; i++)
     {
-        console.log(ele[i] + "\t" + loc + "\t" + ele[i].getAttribute("href"));
+        console.log("Location: "+loc + "\t" + "Mine: "+ele[i].getAttribute("href"));
         if(ele[i].getAttribute("href")===(loc))
         {
             ele[i].classList.add("active");
