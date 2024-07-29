@@ -26,17 +26,17 @@ function includeHTML()
     }
 
     // For active Class
-    var ele = document.querySelectorAll(".navbar a");
+    var ele = document.querySelectorAll(".navbar-links a");
     var loc = window.location.pathname;
     loc = loc.replace("/","");
-    for(var i=1; i<ele.length; i++)
+    for(var i=0; i<ele.length; i++)
     {
         if(ele[i].getAttribute("href")===(loc))
         {
             ele[i].classList.add("active");
-            if(i!=1)
+            if(i!=0)
             {
-                ele[1].classList.remove("active");
+                ele[0].classList.remove("active");
             }
         }
     }
