@@ -1,25 +1,25 @@
-#Portfolio
+# Portfolio
 This project is a personal portfolio website built by Atharva Raj Sinha to showcase his projects and experience in Web Development.
 
-##Project URL
+## Project URL
 The website is hosted at https://atharvarajsinha.netlify.app.
 
-##Project Repository
+## Project Repository
 You can find the project repository on GitHub at www.github.com/atharvarajsinha/Portfolio.git.
 
-##Technologies Used
+## Technologies Used
 - **HTML:** For structuring the website content.
 - **CSS:** For styling the website and making it visually appealing.
 - **JavaScript:** For adding interactive features and enhancing user experience.
 
-##Project Purpose
+## Project Purpose
 
 The primary goal of this project was to create a personal portfolio website to showcase my projects, skills, and experience in Web Development. This project also served as an opportunity for me to:
 - Gain hands-on experience in web development.
 - Master the use of HTML, CSS, and JavaScript.
 - Learn new web development techniques and best practices.
 
-##Features
+## Features
 
 - **Home:** Introduction to my portfolio and recent projects.
 - **About:** Information about me, my interests, and my goals.
@@ -31,7 +31,7 @@ The primary goal of this project was to create a personal portfolio website to s
 - **Blogs:** A collection of my blog posts on Web Development and related topics.
 - **Contact:** Contact form and information for reaching out to me.
 
-##Author
+## Author
 
 **Atharva Raj Sinha**
 
