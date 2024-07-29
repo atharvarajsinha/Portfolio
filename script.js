@@ -31,8 +31,10 @@ function includeHTML()
     loc = loc.replace("/","");
     if(loc==="")
         loc = "index.html";
-    else
+    else if(!loc.endsWith(".html"))
         loc = loc+".html";
+    else
+        console.log(loc);
     for(var i=0; i<ele.length; i++)
     {
         console.log("Location: "+loc + "\t" + "Mine: "+ele[i].getAttribute("href"));
