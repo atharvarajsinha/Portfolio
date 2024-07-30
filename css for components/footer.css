@@ -76,6 +76,28 @@
     text-align: center;
 }
 
+.contact{
+    margin-top: 30px;
+}
+
+.contact .btn{
+    padding: 20px 20px;
+    font-size: 1rem;
+    font-weight: 550;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.contact .btn:hover{
+    background-color: #fff;
+    color: #333;
+    border: none;
+    border: 2.5px solid #fff;
+}
+
 .social-links{
     list-style: none;
     padding: 0;
