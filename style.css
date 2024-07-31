@@ -111,6 +111,10 @@ main{
     margin-bottom: 20px;
 }
 
+.section h2{
+    text-align: left;
+}
+
 .details{
     display: flex;
     flex-wrap: wrap;
@@ -125,8 +129,7 @@ main{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    width: 310px;
-    min-height: 250px;
+    width: 300px;
 }
 
 .detail .board{
@@ -141,6 +144,12 @@ main{
 
 .detail h2{
     margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.detail a{
+    text-decoration: underline;
+    color: #333;
 }
 
 .detail #board{
@@ -153,9 +162,11 @@ main{
     margin-top: 20px;
 }
 
-.detail .additional ol{
+.detail ol,ul{
     padding: 0 0 0 20px;
     color: #333;
+    line-height: 1.5;
+    text-align: left;
 }
 
 @media screen and (max-width: 1095px) {
@@ -212,14 +223,4 @@ main{
 
 .iframe-container:hover .visit-link{
     display: block;
-}
-
-.read{
-    text-decoration: none;
-    color: #333;
-    text-align: center;
-}
-
-.read:hover{
-    text-decoration: underline;
 }

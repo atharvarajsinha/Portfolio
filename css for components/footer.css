@@ -56,6 +56,8 @@
     padding: 0;
     margin: 0;
     margin-top: 20px;
+    text-align: center;
+    color: #fff;
 }
 
 .footer-col ul li{
@@ -151,10 +153,10 @@
         flex-direction: column;
     }
     .footer-col:nth-child(3) ul{
-        text-align: left;
-        word-break: break-word; /* Break words if they are too long */
-        overflow-wrap: break-word; /* Break words to prevent overflow */
-        white-space: normal; /* Allow the text to wrap and break to the next line */
+        text-align: left !important;
+        word-break: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
     }
     .footer .row {
         justify-content: center;
