@@ -224,3 +224,10 @@ main{
 .iframe-container:hover .visit-link{
     display: block;
 }
+
+.detail img{
+    width: 100%;
+    height: fit-content;
+    border: 1.5px solid #333;
+    pointer-events: auto;
+}
